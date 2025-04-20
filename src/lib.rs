@@ -7,14 +7,10 @@ use pluggable_interrupt_os::vga_buffer::{
 };
 
 use core::{
-    clone::Clone,
-    cmp::{min, Eq, PartialEq},
+    cmp::min,
     iter::Iterator,
-    marker::Copy,
-    prelude::rust_2024::derive,
 };
 
-#[derive(Copy, Clone, Eq, PartialEq)]
 pub struct SwimInterface {
     letters: [char; BUFFER_WIDTH],
     num_letters: usize,
